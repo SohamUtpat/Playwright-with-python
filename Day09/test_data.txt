@@ -1,0 +1,5 @@
+tc01,Login valid user,pass
+tc02,Login invalid password,fail
+tc03,Logout,pass
+tc04,Search product,pass
+tc05,Add to cart,fail

@@ -1,0 +1,39 @@
+{
+  "tests": [
+    {
+      "id": "TC001",
+      "name": "Login valid user",
+      "username": "admin",
+      "password": "admin123",
+      "status": "pass"
+    },
+    {
+      "id": "TC002",
+      "name": "Login empty username",
+      "username": "",
+      "password": "admin123",
+      "status": "fail"
+    },
+    {
+      "id": "TC003",
+      "name": "Login short password",
+      "username": "sohamqa",
+      "password": "123",
+      "status": "fail"
+    },
+    {
+      "id": "TC004",
+      "name": "Logout",
+      "username": "tester",
+      "password": "secret99",
+      "status": "pass"
+    },
+    {
+      "id": "TC005",
+      "name": "Missing status case",
+      "username": "guest",
+      "password": "guest12",
+      "status": ""
+    }
+  ]
+}

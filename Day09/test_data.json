@@ -1,0 +1,7 @@
+{
+  "tests": [
+    {"id": 101, "name": "Login valid user", "status": "pass"},
+    {"id": 102, "name": "Login invalid password", "status": "fail"},
+    {"id": 103, "name": "Logout", "status": "pass"}
+  ]
+}

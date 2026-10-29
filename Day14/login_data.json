@@ -1,0 +1,29 @@
+{
+  "logins": [
+    {
+      "username": "admin",
+      "password": "admin123",
+      "expected": "valid"
+    },
+    {
+      "username": "",
+      "password": "admin123",
+      "expected": "invalid"
+    },
+    {
+      "username": "sohamqa",
+      "password": "123",
+      "expected": "invalid"
+    },
+    {
+      "username": "tester",
+      "password": "secret99",
+      "expected": "valid"
+    },
+    {
+      "username": "guest",
+      "password": "",
+      "expected": "invalid"
+    }
+  ]
+}
