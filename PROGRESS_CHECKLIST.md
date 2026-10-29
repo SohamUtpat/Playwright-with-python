@@ -1,8 +1,8 @@
-# Python + Playwright â€” 60-Day Progress Checklist
+# Python + Playwright — 60-Day Progress Checklist
 
 **Learner:** Soham  
 **Start date:** 26 October 2026  
-**Rule:** Attempt first yourself â†’ then ask for review/hints. Do not paste AI solutions as your own work.
+**Rule:** Attempt first yourself ? then ask for review/hints. Do not paste AI solutions as your own work.
 
 **How to use:** Change `[ ]` to `[x]` when done. Update the **Status** line under each day.
 
@@ -12,18 +12,18 @@
 
 | Phase | Days | Status |
 |-------|------|--------|
-| Python fundamentals | 01â€“15 | Complete |
-| Playwright basics | 16â€“30 | Not started |
-| Pytest + framework skills | 31â€“50 | Not started |
-| Final project + CI | 51â€“60 | Not started |
+| Python fundamentals | 01–15 | Complete |
+| Playwright basics | 16–30 | Not started |
+| Pytest + framework skills | 31–50 | Not started |
+| Final project + CI | 51–60 | Not started |
 
 ---
 
-## Day 01 â€” Setup and first Python program
+## Day 01 — Setup and first Python program
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day01/first_python_program.py`
+**File:** `python language/Day01/first_python_program.py`
 
 ### Concepts
 - [x] Python installed and `python --version` works
@@ -46,11 +46,11 @@
 
 ---
 
-## Day 02 â€” Variables and data types
+## Day 02 — Variables and data types
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day02/Day2_script.py`
+**File:** `python language/Day02/Day2_script.py`
 
 ### Concepts
 - [x] Strings
@@ -62,7 +62,7 @@
 - [x] f-strings
 
 ### Practice deliverable
-- [x] Test-case summary printer (id, name, status, duration â€” mix of types)
+- [x] Test-case summary printer (id, name, status, duration — mix of types)
 
 ### Review notes (Day 02)
 - A/C/D/E solid; report shows 3 cases + 66.67% pass rate.
@@ -72,11 +72,11 @@
 
 ---
 
-## Day 03 â€” Operators and comparisons
+## Day 03 — Operators and comparisons
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day03/Day3_script.py`
+**File:** `python language/Day03/Day3_script.py`
 
 ### Concepts
 - [x] Arithmetic operators
@@ -93,16 +93,16 @@
 
 ### Review notes (Day 04)
 - A/B/C/E pass. D fixed: `elif account_locked` is correct.
-- Optional improvement: check locked first, then username, then password, else grant â€” matches Q3 insight.
+- Optional improvement: check locked first, then username, then password, else grant — matches Q3 insight.
 - Tip: change inputs once each to prove all four D messages in the terminal.
 
 ---
 
-## Day 04 â€” Conditions
+## Day 04 — Conditions
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day04/Day4_script.py`
+**File:** `python language/Day04/Day4_script.py`
 
 ### Concepts
 - [x] `if` / `elif` / `else`
@@ -112,11 +112,11 @@
 
 ---
 
-## Day 05 â€” Loops
+## Day 05 — Loops
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day05/Day5_script.py`
+**File:** `python language/Day05/Day5_script.py`
 
 ### Concepts
 - [x] `for` loops
@@ -126,17 +126,17 @@
 - [x] Process a list of test cases and print pass/fail
 
 ### Review notes (Day 05)
-- Aâ€“D pass. D fixed: one index loop with `tests[i]` / `statuses[i]`.
-- Minor: `count = 1` before Aâ€™s for-loop is unused; semicolons after `passed = 0;` are optional in Python.
-- Going forward: no Assignment E (self-check Q&A) â€” code practice only.
+- A–D pass. D fixed: one index loop with `tests[i]` / `statuses[i]`.
+- Minor: `count = 1` before A’s for-loop is unused; semicolons after `passed = 0;` are optional in Python.
+- Going forward: no Assignment E (self-check Q&A) — code practice only.
 
 ---
 
-## Day 06 â€” Lists and tuples
+## Day 06 — Lists and tuples
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day06/Day6_script.py`
+**File:** `python language/Day06/Day6_script.py`
 
 ### Concepts
 - [x] Lists (add, remove, search, slice, iterate)
@@ -146,17 +146,17 @@
 - [x] Store and work with test data in lists/tuples
 
 ### Review notes (Day 06)
-- Aâ€“C pass. D counts fixed with `test_data[i][2]`.
-- Skipped stretch: building a `failed_names` list with `.append` â€” revisit anytime.
+- A–C pass. D counts fixed with `test_data[i][2]`.
+- Skipped stretch: building a `failed_names` list with `.append` — revisit anytime.
 - Key lesson: list index = item; string index = character; tuple index = field.
 
 ---
 
-## Day 07 â€” Dictionaries and sets
+## Day 07 — Dictionaries and sets
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day07/Day7_script.py`
+**File:** `python language/Day07/Day7_script.py`
 
 ### Concepts
 - [x] Dictionaries
@@ -166,17 +166,17 @@
 - [x] User details as dict; unique usernames with a set
 
 ### Review notes (Day 07)
-- Aâ€“D pass. Dict create/update/delete + loop over test statuses.
+- A–D pass. Dict create/update/delete + loop over test statuses.
 - Sets used to remove duplicate usernames.
 - Revisit tonight: write set/dict from memory without looking.
 
 ---
 
-## Day 08 â€” Functions
+## Day 08 — Functions
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day08/Day8_script.py`
+**File:** `python language/Day08/Day8_script.py`
 
 ### Concepts
 - [x] Defining functions
@@ -186,16 +186,16 @@
 - [x] Reusable helpers for validation / formatting test results
 
 ### Review notes (Day 08)
-- Aâ€“D pass. `validate_login`, string checks, `format_result` used in a loop.
+- A–D pass. `validate_login`, string checks, `format_result` used in a loop.
 - Revisit tonight: write one function from blank (args + return).
 
 ---
 
-## Day 09 â€” Exceptions and files
+## Day 09 — Exceptions and files
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day09/Day9_script.py` (+ `test_data.txt`, `test_data.json`)
+**File:** `python language/Day09/Day9_script.py` (+ `test_data.txt`, `test_data.json`)
 
 ### Concepts
 - [x] `try` / `except`
@@ -205,17 +205,17 @@
 - [x] Read test data; handle missing/invalid files
 
 ### Review notes (Day 09)
-- Aâ€“D pass. Handles ValueError, FileNotFoundError, JSONDecodeError.
+- A–D pass. Handles ValueError, FileNotFoundError, JSONDecodeError.
 - Run from `Day09` folder so relative file paths work.
 - Revisit tonight: open/read a file yourself and break it on purpose.
 
 ---
 
-## Day 10 â€” Revision checkpoint 1
+## Day 10 — Revision checkpoint 1
 
 **Status:** `[x] Complete`  
 **Date done:** 26-oct-2026  
-**File:** `Day10/Day10_script.py`
+**File:** `python language/Day10/Day10_script.py`
 
 ### Checkpoint (must explain without copying a full solution)
 - [x] Variables
@@ -229,21 +229,21 @@
 ### Review notes (Day 10)
 - Utility: add / show / count test cases; file load with try/except.
 - Weak topics noted: sets, JSON files, writing functions from blank.
-- Tonight redo Days 07â€“10 yourself so the checklist stays honest.
+- Tonight redo Days 07–10 yourself so the checklist stays honest.
 
 ---
 
-## Days 11â€“15 â€” Python deeper + mini-project (prep for automation)
+## Days 11–15 — Python deeper + mini-project (prep for automation)
 
-> Playwright / browser automation starts on **Day 16**. Days 11â€“15 finish the Python skills you will reuse in every test (modules, classes, JSON data, validation).
+> Playwright / browser automation starts on **Day 16**. Days 11–15 finish the Python skills you will reuse in every test (modules, classes, JSON data, validation).
 
 ---
 
-## Day 11 â€” Modules, packages, pip, venv
+## Day 11 — Modules, packages, pip, venv
 
 **Status:** `[x] Complete`  
 **Date done:** 28-oct-2026  
-**Files:** `Day11/Day11_script.py`, `Day11/test_data.py`, `Day11/helpers.py`
+**Files:** `python language/Day11/Day11_script.py`, `python language/Day11/test_data.py`, `python language/Day11/helpers.py`
 
 ### Concepts
 - [x] Importing built-in modules (`math`, `datetime`, etc.)
@@ -258,17 +258,17 @@
 - [x] Assignment D: create venv, install a package (e.g. `requests`), note it in the script
 
 ### Review notes (Day 11)
-- Aâ€“C pass. Own modules `test_data` + `helpers` imported and used.
+- A–C pass. Own modules `test_data` + `helpers` imported and used.
 - D: project `.venv` created; `requests` installed; `requirements.txt` frozen.
 - Tip: run Day11 with `.venv\Scripts\python.exe` to see the requests version print.
 
 ---
 
-## Day 12 â€” OOP basics
+## Day 12 — OOP basics
 
 **Status:** `[x] Complete`  
 **Date done:** 28-oct-2026  
-**File:** `Day12/Day12_script.py`
+**File:** `python language/Day12/Day12_script.py`
 
 ### Concepts
 - [x] Class vs instance
@@ -282,16 +282,16 @@
 - [x] Loop over users (e.g. only active ones)
 
 ### Review notes (Day 12)
-- Aâ€“D pass. `describe()` / `deactivate()` used; active users filtered in a loop.
+- A–D pass. `describe()` / `deactivate()` used; active users filtered in a loop.
 - Revisit: explain class vs instance in your own words.
 
 ---
 
-## Day 13 â€” Classes, methods, and `__init__`
+## Day 13 — Classes, methods, and `__init__`
 
 **Status:** `[x] Complete`  
 **Date done:** 28-oct-2026  
-**File:** `Day13/Day13_script.py`
+**File:** `python language/Day13/Day13_script.py`
 
 ### Concepts
 - [x] `__init__` constructors
@@ -305,16 +305,16 @@
 - [x] Count pass/fail from a list of `TestCase` objects
 
 ### Review notes (Day 13)
-- Aâ€“D pass. `LoginData.is_valid()` + `TestCase.summary()` + pass/fail counts.
+- A–D pass. `LoginData.is_valid()` + `TestCase.summary()` + pass/fail counts.
 - Revisit: write one class with `__init__` from blank.
 
 ---
 
-## Day 14 â€” JSON and test data
+## Day 14 — JSON and test data
 
 **Status:** `[x] Complete`  
 **Date done:** 28-oct-2026  
-**Files:** `Day14/Day14_script.py`, `Day14/login_data.json`
+**Files:** `python language/Day14/Day14_script.py`, `python language/Day14/login_data.json`
 
 ### Concepts
 - [x] `json.load` / `json.loads`
@@ -328,16 +328,16 @@
 - [x] Handle missing file and invalid JSON
 
 ### Review notes (Day 14)
-- Aâ€“D pass. All expected vs result checks PASS; missing file + bad JSON handled.
+- A–D pass. All expected vs result checks PASS; missing file + bad JSON handled.
 - Run from `Day14` folder so `login_data.json` is found.
 
 ---
 
-## Day 15 â€” Python mini-project (test-data validator)
+## Day 15 — Python mini-project (test-data validator)
 
 **Status:** `[x] Complete`  
 **Date done:** 28-oct-2026  
-**Files:** `Day15/Day15_script.py`, `Day15/validator.py`, `Day15/loader.py`, `Day15/sample_data.json`
+**Files:** `python language/Day15/Day15_script.py`, `python language/Day15/validator.py`, `python language/Day15/loader.py`, `python language/Day15/sample_data.json`
 
 ### Concepts
 - [x] Combine functions + modules + JSON + exceptions
@@ -351,13 +351,13 @@
 - [x] Demo missing-file handling
 
 ### Review notes (Day 15)
-- Aâ€“D pass. Report: total 5 | valid 2 | invalid 3; missing file returns None.
+- A–D pass. Report: total 5 | valid 2 | invalid 3; missing file returns None.
 - Modules split cleanly: loader + validator + main script.
-- Next: Day 16 â€” Install Playwright + Pytest (automation starts).
+- Next: Day 16 — Install Playwright + Pytest (automation starts).
 
 ---
 
-## Days 16â€“30 â€” Playwright basics
+## Days 16–30 — Playwright basics
 
 | Day | Topic | Done |
 |-----|--------|------|
@@ -375,11 +375,11 @@
 | 27 | Uploads / downloads | [ ] |
 | 28 | Cross-browser execution | [ ] |
 | 29 | Test organization and naming | [ ] |
-| 30 | Checkpoint 2 â€” mini suite (â‰¥8 tests) | [ ] |
+| 30 | Checkpoint 2 — mini suite (=8 tests) | [ ] |
 
 ---
 
-## Days 31â€“50 â€” Pytest + framework
+## Days 31–50 — Pytest + framework
 
 | Day | Topic | Done |
 |-----|--------|------|
@@ -392,7 +392,7 @@
 | 37 | Environment variables / secrets | [ ] |
 | 38 | Test data management | [ ] |
 | 39 | Reporting | [ ] |
-| 40 | Checkpoint 3 â€” stable suite | [ ] |
+| 40 | Checkpoint 3 — stable suite | [ ] |
 | 41 | Page Object Model (POM) | [ ] |
 | 42 | POM for multiple pages | [ ] |
 | 43 | Base page / helpers | [ ] |
@@ -402,15 +402,15 @@
 | 47 | API POST and test data | [ ] |
 | 48 | UI + API together | [ ] |
 | 49 | Git basics | [ ] |
-| 50 | Checkpoint 4 â€” framework review | [ ] |
+| 50 | Checkpoint 4 — framework review | [ ] |
 
 ---
 
-## Days 51â€“60 â€” Final project
+## Days 51–60 — Final project
 
 | Day | Topic | Done |
 |-----|--------|------|
-| 51 | Project planning (10â€“15 scenarios) | [ ] |
+| 51 | Project planning (10–15 scenarios) | [ ] |
 | 52 | Implement core tests | [ ] |
 | 53 | Expand coverage | [ ] |
 | 54 | Reliability and debugging | [ ] |
@@ -431,9 +431,9 @@
 - [ ] Can I write a small example without a full copy-paste solution?
 - [ ] Can I debug a simple failure and explain the cause?
 - [ ] Did I save/commit working code and note open questions?
-- [ ] Did I use Cursor to understand/review â€” not to replace learning?
+- [ ] Did I use Cursor to understand/review — not to replace learning?
 
-**This weekâ€™s wins:**  
+**This week’s wins:**  
 **Stuck on:**  
 **Next focus:**  
 
@@ -443,22 +443,22 @@
 
 | Date | Day | What I did | Result |
 |------|-----|------------|--------|
-| 28-oct-2026 | 15 | Day15 mini-project â€” loader + validator + JSON report | Pass |
-| 28-oct-2026 | 14 | Day14_script.py â€” JSON logins, expected checks, exceptions | Pass |
-| 28-oct-2026 | 13 | Day13_script.py â€” LoginData/TestCase, __init__, counts | Pass |
-| 28-oct-2026 | 12 | Day12_script.py â€” User class, methods, active-user loop | Pass |
+| 28-oct-2026 | 15 | Day15 mini-project — loader + validator + JSON report | Pass |
+| 28-oct-2026 | 14 | Day14_script.py — JSON logins, expected checks, exceptions | Pass |
+| 28-oct-2026 | 13 | Day13_script.py — LoginData/TestCase, __init__, counts | Pass |
+| 28-oct-2026 | 12 | Day12_script.py — User class, methods, active-user loop | Pass |
 | 28-oct-2026 | 11 | Day11 modules + helpers/test_data; .venv + requests | Pass |
-| 26-oct-2026 | 10 | Day10_script.py â€” revision CLI utility + weak topics | Pass (redo tonight) |
-| 26-oct-2026 | 09 | Day9_script.py â€” try/except, text + JSON test data | Pass (redo tonight) |
-| 26-oct-2026 | 08 | Day8_script.py â€” functions for login/string/format | Pass (redo tonight) |
-| 26-oct-2026 | 07 | Day7_script.py â€” dicts, sets, unique usernames | Pass (redo tonight) |
-| 26-oct-2026 | 06 | Day6_script.py â€” lists, slices, tuples, status counts | Pass |
-| 26-oct-2026 | 05 | Day5_script.py â€” for/while, counts, paired test lists | Pass |
-| 26-oct-2026 | 04 | Day4_script.py â€” if/elif/else, login tree, password checks | Pass |
-| 26-oct-2026 | 03 | Day3_script.py â€” arithmetic, comparisons, logic, pass/fail rules | Pass |
-| 26-oct-2026 | 02 | Day2_script.py â€” types, conversion, f-strings, summary printer | Pass |
-| 26-oct-2026 | 01 | first_python_program.py â€” name, role, goal, date | Pass |
+| 26-oct-2026 | 10 | Day10_script.py — revision CLI utility + weak topics | Pass (redo tonight) |
+| 26-oct-2026 | 09 | Day9_script.py — try/except, text + JSON test data | Pass (redo tonight) |
+| 26-oct-2026 | 08 | Day8_script.py — functions for login/string/format | Pass (redo tonight) |
+| 26-oct-2026 | 07 | Day7_script.py — dicts, sets, unique usernames | Pass (redo tonight) |
+| 26-oct-2026 | 06 | Day6_script.py — lists, slices, tuples, status counts | Pass |
+| 26-oct-2026 | 05 | Day5_script.py — for/while, counts, paired test lists | Pass |
+| 26-oct-2026 | 04 | Day4_script.py — if/elif/else, login tree, password checks | Pass |
+| 26-oct-2026 | 03 | Day3_script.py — arithmetic, comparisons, logic, pass/fail rules | Pass |
+| 26-oct-2026 | 02 | Day2_script.py — types, conversion, f-strings, summary printer | Pass |
+| 26-oct-2026 | 01 | first_python_program.py — name, role, goal, date | Pass |
 
 ---
 
-When you finish a day: mark concepts `[x]`, set **Status**, add a row to the progress log, then ask for the next dayâ€™s assignments (or a review of your code).
+When you finish a day: mark concepts `[x]`, set **Status**, add a row to the progress log, then ask for the next day’s assignments (or a review of your code).
