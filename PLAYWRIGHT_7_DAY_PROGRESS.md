@@ -12,7 +12,7 @@
 | Day | Focus | Status |
 |-----|--------|--------|
 | 1 | Setup, first test, locators and assertions | Complete |
-| 2 | Reliable interactions, waits and debugging | Not started |
+| 2 | Reliable interactions, waits and debugging | Complete |
 | 3 | Pytest structure, fixtures and test data | Not started |
 | 4 | Page Object Model and maintainability | Not started |
 | 5 | End-to-end mini project | Not started |
@@ -49,19 +49,27 @@
 
 ## Day 2 — Reliable interactions, waits and debugging
 
-**Status:** `[ ] Not started`  
-**Date done:**  
-**File:**
+**Status:** `[x] Complete`  
+**Date done:** 29-oct-2026  
+**File:** `automation_Day02/Day02_script.py` (+ `DEBUG_NOTES.txt`)
 
 ### Hands-on tasks
-- [ ] Form happy path + at least two invalid-input cases
-- [ ] Web-first assertions (`to_be_visible`, `to_have_text`, `to_be_enabled`, etc.)
-- [ ] No fixed `time.sleep()`; use condition-based waits
-- [ ] Failing test in headed/debug mode; inspect trace or screenshot
-- [ ] Dialog / iframe / new tab only if the demo app requires it
+- [x] Form happy path + at least two invalid-input cases
+- [x] Web-first assertions (`to_be_visible`, `to_have_text`, `to_be_enabled`, etc.)
+- [x] No fixed `time.sleep()`; use condition-based waits
+- [x] Failing test in headed/debug mode; inspect trace or screenshot
+- [x] Dialog / iframe / new tab only if the demo app requires it
 
 ### Daily deliverable
-- [ ] Small form suite with negative cases + one documented debug investigation
+- [x] Small form suite with negative cases + one documented debug investigation
+
+### Review notes (Day 2)
+- A: Selenium web-form happy path — fill fields, submit, assert `Received!` + `Form submitted`.
+- B: OrangeHRM wrong username → `Invalid credentials` (assertion timeout increased for slow demo).
+- C: OrangeHRM empty password → `required` validation visible.
+- D: Web-first drill — visible, value, checked, enabled, have_text/contain_text; no sleeps.
+- E: Debug notes in `DEBUG_NOTES.txt` — flaky B due to late error message; fixed with longer expect timeout.
+- Ready for Day 3.
 
 ---
 

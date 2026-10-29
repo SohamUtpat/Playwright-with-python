@@ -1,0 +1,13 @@
+Debugging Report – Assignment B (Invalid Credentials)
+
+Issue: The test case intermittently failed while asserting the "Invalid credentials" message.
+
+Observation: The error message sometimes took longer to appear than the default assertion timeout.
+
+Root Cause: The test failed due to a possible timing issue caused by delayed display of the error message.
+
+Fix Applied: Increased the assertion timeout to 10 seconds to allow more time for the message to appear.
+
+Retest: Reran the test to verify whether the failure was resolved.
+
+Learning: Learned how to investigate flaky tests and use Playwright web-first assertions with appropriate timeouts.
