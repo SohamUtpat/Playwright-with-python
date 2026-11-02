@@ -13,7 +13,7 @@
 |-----|--------|--------|
 | 1 | Setup, first test, locators and assertions | Complete |
 | 2 | Reliable interactions, waits and debugging | Complete |
-| 3 | Pytest structure, fixtures and test data | Not started |
+| 3 | Pytest structure, fixtures and test data | Complete |
 | 4 | Page Object Model and maintainability | Not started |
 | 5 | End-to-end mini project | Not started |
 | 6 | Stability, reporting and running the suite | Not started |
@@ -75,10 +75,28 @@
 
 ## Day 3 — Pytest structure, fixtures and test data
 
-**Status:** `[ ] Not started`
+**Status:** `[x] Complete`  
+**Date done:** 02-nov-2026  
+**Folder:** `automation_Day03/` (`tests/`, `conftest.py`, `test_data/users.json`, `pytest.ini`, `.env`)
+
+### Hands-on tasks
+- [x] Organize tests into `test_form.py` and `test_login.py` with descriptive names
+- [x] Custom `login_page` fixture (setup via BASE_URL; earlier yield/teardown practiced)
+- [x] `pytest.mark.parametrize` for valid and invalid login inputs
+- [x] Smoke and regression markers registered in `pytest.ini` (form smoke; login marks need restore after JSON move)
+- [x] Login rows in `test_data/users.json`; `BASE_URL` / `FORM_URL` from `.env` (gitignored)
 
 ### Daily deliverable
-- [ ] Structured suite with one custom fixture, parametrize, and markers
+- [x] Structured suite with custom fixture, parametrized cases, markers, and external test data
+
+### Review notes (Day 3)
+- A: Split suite — form happy path + login negative cases; names describe the check.
+- B: `login_page` fixture opens login and was practiced with `yield` + `clear_cookies`; current fixture uses `BASE_URL` and `return page` (teardown dropped — restore `yield` + cleanup before Day 4 if needed).
+- C: One `test_login` with 4 parametrized rows; all passed.
+- D: `smoke` / `regression` registered; `-m smoke` and `-m regression` demonstrated; run from `automation_Day03` so `pytest.ini` loads.
+- E: `users.json` drives parametrize; `.env` has `BASE_URL` and `FORM_URL`; missing env → `pytest.fail`; full suite **5 passed**.
+- Follow-up: after moving data to JSON, per-row smoke/regression marks on login were removed — add a `mark` field in JSON (or map expected → mark) so `-m smoke` still includes valid login.
+- Ready for Day 4 (POM).
 
 ---
 
