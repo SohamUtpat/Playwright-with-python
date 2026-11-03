@@ -16,7 +16,7 @@
 | 3 | Pytest structure, fixtures and test data | Complete |
 | 4 | Page Object Model and maintainability | Complete |
 | 5 | End-to-end mini project | Complete |
-| 6 | Stability, reporting and running the suite | Not started |
+| 6 | Stability, reporting and running the suite | Complete |
 | 7 | Independent challenge, review and demo | Not started |
 
 ---
@@ -163,10 +163,33 @@ Can you describe the test coverage and why each scenario matters?
 
 ## Day 6 — Stability, reporting and running the suite
 
-**Status:** `[ ] Not started`
+**Status:** `[x] Complete`  
+**Date started:** 03-nov-2026  
+**Date done:** 03-nov-2026  
+**Folder:** `automation_Day06/` (+ root `README.md`, `requirements.txt`)
+
+**Focus:** Diagnosing flaky tests, independent test data, cleanup, headless/headed runs, basic HTML reporting, and a first look at another browser.
+
+### Hands-on tasks
+- [x] A: Run the full suite at least **3 times**; fix real instability (no sleeps / blind retries)
+- [x] B: Confirm tests are **independent** (no order dependency or leftover cart/session state)
+- [x] C: Run **smoke** on Chromium; try Firefox or WebKit if browsers are installed
+- [x] D: Generate an **HTML report**; keep failure evidence (screenshot / trace) for at least one failure
+- [x] E: Add a concise **README** (setup, `.env`, markers, run commands) — root `README.md` (covers Day 06)
 
 ### Daily deliverable
-- [ ] Repeatable suite, HTML report, README
+- [x] Repeatable suite + HTML report + failure evidence where useful + usable README
+
+### Review notes (Day 6)
+- A: 3× full suite green (7 passed each run).
+- B: Single test / login file / full suite all pass; cookie clear keeps tests independent.
+- C: Smoke 3 passed on Chromium, Firefox, and WebKit.
+- D: `reports/report.html` + `fail_report.html`; screenshot under `test-results/` from deliberate locked-out assertion mismatch (restored after).
+- E: Root README + requirements aligned to actual `python -m` workflow.
+- Ready for Day 7.
+
+### Review question
+Can you run the suite from a clean terminal and explain a failure without relying on AI?
 
 ---
 
