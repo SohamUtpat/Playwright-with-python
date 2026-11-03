@@ -1,0 +1,26 @@
+[
+    {
+        "username": "Admin",
+        "password": "admin123",
+        "expected": "success",
+        "mark": "smoke"
+    },
+    {
+        "username": "admin1",
+        "password": "admin123",
+        "expected": "Invalid credentials",
+        "mark": "regression"
+    },
+    {
+        "username": "Admin",
+        "password": "wrong-pass",
+        "expected": "Invalid credentials",
+        "mark": "regression"
+    },
+    {
+        "username": "Admin",
+        "password": "",
+        "expected": "required",
+        "mark": "regression"
+    }
+]

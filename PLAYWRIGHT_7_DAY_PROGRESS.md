@@ -14,8 +14,8 @@
 | 1 | Setup, first test, locators and assertions | Complete |
 | 2 | Reliable interactions, waits and debugging | Complete |
 | 3 | Pytest structure, fixtures and test data | Complete |
-| 4 | Page Object Model and maintainability | Not started |
-| 5 | End-to-end mini project | Not started |
+| 4 | Page Object Model and maintainability | Complete |
+| 5 | End-to-end mini project | In progress |
 | 6 | Stability, reporting and running the suite | Not started |
 | 7 | Independent challenge, review and demo | Not started |
 
@@ -102,19 +102,56 @@
 
 ## Day 4 — Page Object Model and maintainability
 
-**Status:** `[ ] Not started`
+**Status:** `[x] Complete`  
+**Date started:** 02-nov-2026  
+**Date done:** 03-nov-2026  
+**Folder:** `automation_Day04/`
+
+**Focus:** Purpose of POM, locators and page actions together, test intent and assertions stay in the test.
+
+### Hands-on tasks
+- [x] A: Create `LoginPage` with locators and simple methods
+- [x] B: Refactor login tests to use `LoginPage` (no repeated locator/action sequence)
+- [x] C: Create `FormPage` and use it from the form test
+- [x] D: Keep POM simple — review naming, duplication, no base class / helper layer
+- [x] E: Wire Day 3 fixtures, data, markers, and env into the POM suite
 
 ### Daily deliverable
-- [ ] Small suite using one or two page objects (no overengineering)
+- [x] Small suite using one or two page objects (no overengineering)
+
+### Review notes (Day 4)
+- A: `LoginPage` with locators in `__init__`, action methods, OrangeHRM URL via fixture/`BASE_URL`.
+- B: Parametrized login through `LoginPage.login(...)`; assertions stay in the test.
+- C: `FormPage` + smoke form test; `Received!` / `Form submitted` asserted in test.
+- D: Notes in `conftest.py` on page object vs test; no base class.
+- E: `login_page` fixture with `yield` + clear cookies; `.env` URLs; `users.json` marks drive smoke/regression (`2` smoke / `3` regression collected).
+- Ready for Day 5.
+
+### Review question
+Can you explain what belongs in a page object versus a test?
 
 ---
 
 ## Day 5 — End-to-end mini project
 
-**Status:** `[ ] Not started`
+**Status:** `[ ] In progress`  
+**Date started:** 03-nov-2026  
+**Folder:** `automation_Day05/` (create yourself)
+
+**Focus:** Choosing scenarios, priority, positive/negative paths, and keeping tests independent.
+
+### Hands-on tasks
+- [ ] A: Choose one demo app for Days 5–7; write a short scenario list (8–10)
+- [ ] B: Prioritize and automate the top 5–7 scenarios (POM + fixtures + test data where useful)
+- [ ] C: Keep values in test data / env — not hard-coded throughout tests
+- [ ] D: Mark each scenario Automated vs Manual in the list
+- [ ] E: Be ready to explain coverage — why each automated scenario matters
 
 ### Daily deliverable
-- [ ] Scenario list + at least 5 useful automated tests
+- [ ] Working mini-project: scenario list + at least 5 useful automated tests
+
+### Review question
+Can you describe the test coverage and why each scenario matters?
 
 ---
 
