@@ -15,7 +15,7 @@
 | 2 | Reliable interactions, waits and debugging | Complete |
 | 3 | Pytest structure, fixtures and test data | Complete |
 | 4 | Page Object Model and maintainability | Complete |
-| 5 | End-to-end mini project | In progress |
+| 5 | End-to-end mini project | Complete |
 | 6 | Stability, reporting and running the suite | Not started |
 | 7 | Independent challenge, review and demo | Not started |
 
@@ -134,21 +134,27 @@ Can you explain what belongs in a page object versus a test?
 
 ## Day 5 — End-to-end mini project
 
-**Status:** `[ ] In progress`  
+**Status:** `[x] Complete`  
 **Date started:** 03-nov-2026  
-**Folder:** `automation_Day05/` (create yourself)
+**Date done:** 03-nov-2026  
+**Folder:** `automation_Day05/` (`scenarios.md`)
 
 **Focus:** Choosing scenarios, priority, positive/negative paths, and keeping tests independent.
 
 ### Hands-on tasks
-- [ ] A: Choose one demo app for Days 5–7; write a short scenario list (8–10)
-- [ ] B: Prioritize and automate the top 5–7 scenarios (POM + fixtures + test data where useful)
-- [ ] C: Keep values in test data / env — not hard-coded throughout tests
-- [ ] D: Mark each scenario Automated vs Manual in the list
-- [ ] E: Be ready to explain coverage — why each automated scenario matters
+- [x] A: Choose one demo app for Days 5–7; write a short scenario list (8–10)
+- [x] B: Prioritize and automate the top 5–7 scenarios (POM + fixtures + test data where useful)
+- [x] C: Keep values in test data / env — not hard-coded throughout tests
+- [x] D: Mark each scenario Automated vs Manual in the list
+- [x] E: Be ready to explain coverage — why each automated scenario matters (notes in scenarios.md; tighten wording below)
 
 ### Daily deliverable
-- [ ] Working mini-project: scenario list + at least 5 useful automated tests
+- [x] Working mini-project: scenario list + at least 5 useful automated tests
+
+### Review notes (Day 5)
+- A–D pass. Sauce Demo mini-project: 7 automated (TC-01–07), 3 manual (TC-08–10).
+- E: coverage notes present; correct idea — fix facts: wrong **password** (not username), empty **username** (not password), and mention locked-out; manual cases are not “already tested,” just lower priority/time.
+- Ready for Day 6 after local `pytest` green.
 
 ### Review question
 Can you describe the test coverage and why each scenario matters?

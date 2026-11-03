@@ -1,0 +1,26 @@
+[
+    {
+        "username": "standard_user",
+        "password": "secret_sauce",
+        "expected": "success",
+        "mark": "smoke"
+    },
+    {
+        "username": "standard_user",
+        "password": "admin123",
+        "expected": "Invalid",
+        "mark": "regression"
+    },
+    {
+        "username": "",
+        "password": "secret_sauce",
+        "expected": "username_required",
+        "mark": "regression"
+    },
+    {
+        "username": "locked_out_user",
+        "password": "secret_sauce",
+        "expected": "locked",
+        "mark": "regression"
+    }
+]
