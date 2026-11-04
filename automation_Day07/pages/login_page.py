@@ -1,7 +1,3 @@
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 class LoginPage:
 
@@ -14,9 +10,6 @@ class LoginPage:
         self.login_button = page.get_by_role("button", name="Login")
         # shared error box — assert exact text in the test
         self.error_message = page.locator("[data-test='error']")
-
-    def open(self):
-        self.page.goto(os.getenv("BASE_URL"))
 
     def enter_username(self, username):
         self.username.fill(username)
