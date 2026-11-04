@@ -2,7 +2,7 @@
 
 UI test automation practice built around a 7-day Playwright plan. The suite uses **Python**, **Pytest**, and **Playwright** with the **Page Object Model**, external test data, env-based URLs, and smoke/regression markers.
 
-**Demo app (Days 5–6):** [Sauce Demo](https://www.saucedemo.com/)
+**Demo app (Days 5–7):** [Sauce Demo](https://www.saucedemo.com/)
 
 ---
 
@@ -31,25 +31,27 @@ Python, Pytest and Playwright/
 ├── automation_Day03/         # Fixtures, parametrize, JSON + .env
 ├── automation_Day04/         # Page Object Model
 ├── automation_Day05/         # Sauce Demo mini-project
-└── automation_Day06/         # Stability, reporting, multi-browser (current)
+├── automation_Day06/         # Stability, reporting, multi-browser
+└── automation_Day07/         # Independent challenge + demo (current)
     ├── .env                  # BASE_URL (not committed)
     ├── conftest.py           # login_page fixture
     ├── pytest.ini            # smoke / regression markers
-    ├── scenarios.md          # TC list and run notes
+    ├── scenarios.md          # TC list + demo checklist
+    ├── SELF_REVIEW.md        # Strengths / gaps / next steps
     ├── pages/
     │   ├── login_page.py
-    │   └── inventory_page.py
+    │   ├── inventory_page.py
+    │   └── cart_page.py
     ├── test_data/
     │   ├── users.json
     │   └── products.json
     ├── tests/
     │   ├── test_login.py
     │   └── test_inventory.py
-    ├── reports/              # Generated HTML reports (gitignored)
-    └── test-results/         # Failure screenshots (gitignored)
+    └── reports/              # Generated HTML reports (gitignored)
 ```
 
-Use **`automation_Day06`** as the main runnable suite.
+Use **`automation_Day07`** as the main runnable suite.
 
 ---
 
@@ -73,7 +75,7 @@ python -m playwright install chromium
 
 ### 2. Configure `.env`
 
-Create `automation_Day06/.env` (or copy from an earlier day folder):
+Create `automation_Day07/.env` (or copy from an earlier day folder):
 
 ```env
 BASE_URL=https://www.saucedemo.com/
@@ -108,7 +110,7 @@ BASE_URL=https://www.saucedemo.com/
 
 ---
 
-## Automated coverage (Day 06)
+## Automated coverage (Day 07)
 
 | ID | Scenario | Marker |
 |----|----------|--------|
@@ -119,8 +121,9 @@ BASE_URL=https://www.saucedemo.com/
 | TC-05 | Inventory list visible after login | smoke |
 | TC-06 | Add product → cart badge `1` | smoke |
 | TC-07 | Open cart → product name visible | regression |
+| TC-08 | Remove from cart → empty cart (Day 07) | smoke |
 
-Manual backlog (TC-08–10): remove from cart, checkout validation, full checkout — see `automation_Day06/scenarios.md`.
+Manual backlog (TC-09–10): checkout validation, full checkout — see `automation_Day07/scenarios.md`.
 
 ---
 
@@ -129,7 +132,7 @@ Manual backlog (TC-08–10): remove from cart, checkout validation, full checkou
 Always run from the day folder so `pytest.ini`, `.env`, and relative `test_data/` paths resolve:
 
 ```powershell
-cd "automation_Day06"
+cd "automation_Day07"
 ```
 
 ### Full suite

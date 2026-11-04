@@ -17,7 +17,7 @@
 | 4 | Page Object Model and maintainability | Complete |
 | 5 | End-to-end mini project | Complete |
 | 6 | Stability, reporting and running the suite | Complete |
-| 7 | Independent challenge, review and demo | Not started |
+| 7 | Independent challenge, review and demo | In progress |
 
 ---
 
@@ -195,7 +195,26 @@ Can you run the suite from a clean terminal and explain a failure without relyin
 
 ## Day 7 — Independent challenge, review and demo
 
-**Status:** `[ ] Not started`
+**Status:** `[ ] In progress`  
+**Date started:** 03-nov-2026  
+**Folder:** `automation_Day07/` (`scenarios.md`, `SELF_REVIEW.md`)
+
+**Focus:** Consolidating fundamentals and explaining trade-offs. API testing and CI are optional only after the core work.
+
+### Hands-on tasks
+- [x] A: Without AI writing the solution, automate **one new flow** (TC-08 remove from cart)
+- [x] B: Include a meaningful locator, action, assertion, and sensible failure diagnosis
+- [ ] C: Run the **full suite** and review the HTML report; fix or document remaining failures
+- [ ] D: Be ready to explain locators, auto-waiting, assertions, fixtures, parametrization, POM, and debugging
+- [ ] E: Give a **5–10 minute demo** of the project, structure, results, and next steps
+- [ ] Optional (only if core work is done): safe demo API check **or** document a basic CI command
 
 ### Daily deliverable
-- [ ] Demo of mini-project + short self-review
+- [ ] Demo of mini-project + short self-review (`SELF_REVIEW.md` drafted)
+
+### Review notes (Day 7 — so far)
+- Learner wrote TC-08 + `CartPage`; suite restored to TC-01–08 for demo (parametrize, negatives, markers).
+- Next: full green run + HTML report, then demo using checklist in `scenarios.md`.
+
+### Review question
+Can you independently add, run, debug, and explain a test?
